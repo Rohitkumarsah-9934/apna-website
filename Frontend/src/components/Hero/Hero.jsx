@@ -56,10 +56,8 @@ const Hero = ({ handleOrderPopup }) => {
           {ImageList.map((data) => (
             <div key={data.id}>
               <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-
                 {/* text section */}
                 <div className="flex flex-col justify-center gap-4 pt-10 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
-
                   <span className="inline-block w-fit mx-auto sm:mx-0 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
                     {data.badge}
                   </span>
@@ -81,12 +79,12 @@ const Hero = ({ handleOrderPopup }) => {
                       <FaArrowRight className="text-xs" />
                     </Link>
 
-                    <button
-                      onClick={handleOrderPopup}
-                      className="bg-white dark:bg-gray-800 border-2 border-orange-500 text-orange-500 hover:bg-orange-50 dark:hover:bg-gray-700 hover:scale-105 duration-200 py-2.5 px-6 rounded-full text-sm font-semibold transition-all"
+                    <Link
+                      to="/claim-now"
+                      className="bg-white dark:bg-gray-800 border-2 border-orange-500 text-orange-500 hover:bg-orange-50 dark:hover:bg-gray-700 hover:scale-105 duration-200 py-2.5 px-6 rounded-full text-sm font-semibold transition-all inline-block"
                     >
                       Claim Offer
-                    </button>
+                    </Link>
                   </div>
                 </div>
 

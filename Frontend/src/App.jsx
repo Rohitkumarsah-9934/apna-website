@@ -39,7 +39,7 @@ import ClaimNow from "./Pages/ClaimNow";
 
 
 const App = () => {
-  const [orderPopup, setOrderPopup] = React.useState(false);
+  
 
   React.useEffect(() => {
     AOS.init({
